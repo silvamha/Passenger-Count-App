@@ -1,4 +1,7 @@
 // document.getElementById("count-el").innerText = 5;
+const jsdom = require("jsdom");
+
+
 const countEl = document.getElementById("count-el");
 const incrementBtn = document.getElementById("increment-btn");
 const saveBtn = document.getElementById("save-btn");
@@ -8,13 +11,6 @@ console.log(count);
 incrementBtn.addEventListener("click", function () {
   count += 1;
   countEl.textContent = count;
+  console.log(count);
 });
 
-function increaseByOne() {
-  let counter = 0;
-  counter++;
-  console.log(counter);
-}
-
-increaseByOne();
-increaseByOne();
