@@ -11,31 +11,68 @@ incrementBtn.addEventListener("click", function () {
   console.log(count);
 });
 
-function showNumber() {
-  let num = 42;
-  console.log(num);
-}
+saveBtn.addEventListener("click", function () {
+  console.log(count);
+});
 
-showNumber();
+let userName = "Ed";
 
-let lap1 = 34;
-let lap2 = 33;
-let lap3 = 36;
-function addLaps() {
+let msg = "You have three new notifications";
+displayMsg = () => {
+  console.log(`${userName}, ${msg}!`);
+};
+displayMsg();
 
-  let totalLaps = lap1 + lap2 + lap3;
-  console.log(totalLaps);
-}
+// Create two variables, name and greeting. The name variable should store your name,
+// and the greeting should store e.g. "Hi, my name is "
 
-addLaps()
+// Create a third variable, myGreeting, that contatenates the two strings
+// Log myGreeting to the console
 
-let lapsCompleted = 0;
+let name="Ed";
+let greeting ="Hi, my name is "
+let myGreeting=`${greeting} ${name}`;
+console.log(myGreeting);
 
-function incrementLap() {
-  lapsCompleted += 1;
-  console.log(lapsCompleted);
-}
+console.log(4 + 5)  = 9
+console.log("2" + "4") =
+console.log("5" + 1) = 51
+console.log(100 + "100") = "100100"
+// console.log(incrementBtn);
 
-incrementLap()
-incrementLap()
-incrementLap()
+// function showNumber() {
+//   let num = 42;
+//   console.log(num);
+// }
+
+// showNumber();
+
+// let lap1 = 34;
+// let lap2 = 33;
+// let lap3 = 36;
+// function addLaps() {
+
+//   let totalLaps = lap1 + lap2 + lap3;
+//   console.log(totalLaps);
+// }
+
+// addLaps()
+
+// let lapsCompleted = 0;
+
+// function incrementLap() {
+//   lapsCompleted += 1;
+//   console.log(lapsCompleted);
+// }
+
+// incrementLap()
+// incrementLap()
+// incrementLap()
+
+
+// Grab the welcome-el paragraph and store it in a variable called welcomeEl
+
+// Create two variables (name & greeting) that contains your name
+// and the greeting we want to render on the page
+
+// Render the welcome message using welcomeEl.innerText
