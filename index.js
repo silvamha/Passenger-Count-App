@@ -2,6 +2,8 @@
 const countEl = document.getElementById("count-el");
 const incrementBtn = document.getElementById("increment-btn");
 const saveBtn = document.getElementById("save-btn");
+const greetingEl = document.getElementById("greeting-el");
+const counterEl = document.getElementById("counter-el");
 let count = 0;
 console.log(count);
 
@@ -12,6 +14,9 @@ incrementBtn.addEventListener("click", function () {
 });
 
 saveBtn.addEventListener("click", function () {
+  counterEl.innerText += ` ${count} - `;
+  count = 0;
+  countEl.textContent = count;
   console.log(count);
 });
 
@@ -23,21 +28,25 @@ displayMsg = () => {
 };
 displayMsg();
 
+// greetingEl.innerText = `${userName}, ${msg}! 🎉`;
+
 // Create two variables, name and greeting. The name variable should store your name,
 // and the greeting should store e.g. "Hi, my name is "
 
 // Create a third variable, myGreeting, that contatenates the two strings
 // Log myGreeting to the console
-
-let name="Ed";
-let greeting ="Hi, my name is "
-let myGreeting=`${greeting} ${name}`;
+let emoji = "j";
+let name = "Ed";
+let greeting = "Hi, my name is ";
+let myGreeting = `${greeting} ${name}`;
 console.log(myGreeting);
 
-console.log(4 + 5)  = 9
-console.log("2" + "4") =
-console.log("5" + 1) = 51
-console.log(100 + "100") = "100100"
+// let sum = 4 + 5;
+
+// console.log(sum)
+// console.log("2" + "4") =
+// console.log("5" + 1) = 51
+// console.log(100 + "100") = "100100"
 // console.log(incrementBtn);
 
 // function showNumber() {
@@ -68,7 +77,6 @@ console.log(100 + "100") = "100100"
 // incrementLap()
 // incrementLap()
 // incrementLap()
-
 
 // Grab the welcome-el paragraph and store it in a variable called welcomeEl
 
